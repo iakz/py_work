@@ -1,2 +1,2 @@
-# py2.7_work_
+# py_work
 python2.7+sublimeText3项目练习
