@@ -6,7 +6,6 @@ reload(sys)
 import random
 sys.setdefaultencoding('utf8')
 
-
 # print '玩家出的是：' + str(player) + ' , 电脑出的是：' + str(computer)
 a = 1
 while a:
@@ -41,7 +40,10 @@ while a:
 		print '玩家出的是：' + player1 + ' , 电脑出的是：' + computer1
 		print '真是心有灵犀啊！'
 		a = int(input('再来一次请输入1，结束请输入0：'))
-	else:
+	elif (player == 1 and computer == 3) or (player == 2 and computer == 1) or (player == 3 and computer ==2):
 		print '玩家出的是：' + player1 + ' , 电脑出的是：' + computer1
 		print '我不服！'
+		a = int(input('再来一次请输入1，结束请输入0：'))
+	else:
+		print player1
 		a = int(input('再来一次请输入1，结束请输入0：'))
