@@ -32,7 +32,9 @@ while a:
 
 
 
-	if (player == 1 and computer == 2) or (player == 2 and computer == 3) or (player == 3 and computer ==1):
+	if ((player == 1 and computer == 2) 
+			or (player == 2 and computer == 3) 
+			or (player == 3 and computer ==1)):
 		print '玩家出的是：' + player1 + ' , 电脑出的是：' + computer1
 		print '电脑弱爆了！'
 		a = int(input('再来一次请输入1，结束请输入0：'))
@@ -40,7 +42,9 @@ while a:
 		print '玩家出的是：' + player1 + ' , 电脑出的是：' + computer1
 		print '真是心有灵犀啊！'
 		a = int(input('再来一次请输入1，结束请输入0：'))
-	elif (player == 1 and computer == 3) or (player == 2 and computer == 1) or (player == 3 and computer ==2):
+	elif ((player == 1 and computer == 3) 
+			or (player == 2 and computer == 1) 
+			or (player == 3 and computer ==2)):
 		print '玩家出的是：' + player1 + ' , 电脑出的是：' + computer1
 		print '我不服！'
 		a = int(input('再来一次请输入1，结束请输入0：'))
